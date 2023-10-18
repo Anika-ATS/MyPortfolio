@@ -2,10 +2,20 @@
 import lu from '../assets/imges/luLogo.jpg'
 import clg from '../assets/imges/clglogo.jpg'
 import scl from '../assets/imges/sclLogo.jpg'
+ 
+
+import { motion } from "framer-motion";
 
 const Education = () => {
   return (
-    <div id="education " className='flex flex-col items-center mt-28 '>
+    <motion.div id="education " 
+                
+                initial={{x:'-100%',opacity:0}}
+                animate={{x:0,opacity:1}}
+                transition={{duration:0.5,delay:0.5}}
+    
+    
+                className='flex flex-col items-center mt-28 '>
 
         {/* uni */}
       <div className=" w-2/3 p-2 mb-5 card card-side bg-purple-100 shadow-4xl shadow-black border-l-[6px] border-b-[4px]  border-purple-950 border-r-[1px] border-t-[1px] border-r-purple-300 border-t-purple-300 transition ease-in-out delay-150  hover:-translate-y-16 hover:scale-110 duration-300 ...
@@ -80,7 +90,7 @@ const Education = () => {
 
 
 
-    </div>
+    </motion.div>
   );
 };
 
