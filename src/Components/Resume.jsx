@@ -25,21 +25,36 @@ const Resume = () => {
         <div className="p-4 bg-opacity-30 border-b-[1px] border-l-[4px] border-purple-950 bg-purple-200 ">
           <ul className="w-full grid grid-cols-4 text-center text-purple-950 font-bold text-lg cursor-pointer  ">
             
-            <li onClick={()=>setEducationData(true)} className=" hover:bg-purple-950" >
+            <li className="text-md hover:scale-150 duration-300 ..."
+                onClick={()=>setEducationData(true) 
+                             & setSkillData(false)
+                             & setExperienceData(false) 
+                             & setAchievementData(false)} 
+                              >
                 Education
             </li>
 
-            <li onClick={()=>setEducationData(false) && setSkillData(true) }>
+            <li className="text-md hover:scale-150 duration-300 ..."
+            
+               onClick={()=> setSkillData(true)
+                             & setEducationData(false) 
+                             & setExperienceData(false) 
+                             & setAchievementData(false) }>
                 Professional Skill
             </li>
 
 
-            <li onClick={()=>setEducationData(false) && setExperienceData(true)}>
+            <li  className="text-md hover:scale-150 duration-300 ..."
+                 onClick={()=> setExperienceData(true)
+                               & setSkillData(false)
+                               & setEducationData(false) 
+                               & setExperienceData(false) }>
                 Experience
             </li>
 
 
-            <li onClick={()=>setEducationData(false) && setAchievementData(true)}>
+            <li className="text-md hover:scale-150 duration-300 ..."
+                onClick={()=>setEducationData(false) & setAchievementData(true)}>
                 Achivements
             </li>
           </ul>

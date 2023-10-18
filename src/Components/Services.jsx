@@ -7,9 +7,13 @@ import {IoLogoJavascript} from "react-icons/io";
 import Skill from "../assets/animation_lnr4vvfz.json";
 import {FaReact} from "react-icons/fa";
 import {BsBootstrapFill} from "react-icons/bs";
+import {BiLogoNetlify} from "react-icons/bi";
 import {SiExpress} from "react-icons/si";
 import {IoLogoFirebase} from "react-icons/io5";
+import {IoLogoVercel} from "react-icons/io5";
 import {SiMongodb} from "react-icons/si";
+
+import { motion } from "framer-motion";
 
 
 
@@ -22,27 +26,27 @@ const Services = () => {
         </div>
         <h1 className=" text-4xl font-bold text-purple-950 mt-8">My Skills </h1>
       </div>
-      <div className="mx-40 grid grid-cols-5  ">
+      <motion.div className="mx-40 grid grid-cols-6  "
+      
+                  initial={{x:'-100%',opacity:0}}
+                  animate={{x:0,opacity:1}}
+                  transition={{duration:0.5,delay:0.5}}
+      
+      >
         {/* 1 */}
-        <div className=" w-4/5  h-40 rounded-lg  mt-10 shadow-4xl  border border-y-4 bg-purple-200 border-purple-950 group hover:animate-bounce bg-gradient-to-b hover:from-purple-400 hover:to-purple-300 transition-colors duration-100 ">
-          <h1 className="mx-2 font-bold text-lg text-purple-950">HTML</h1>
+        <div className=" w-4/5  h-40 rounded-lg  mt-10 shadow-4xl  border border-y-4  bg-gradient-to-r from-purple-950 via-purple-400 to-pink-400 border-purple-950 hover:animate-bounce    transition-colors duration-100 ">
+          <h1 className="mt-2 mx-2 font-serif font-semibold text-md text-purple-200">HTML</h1>
           <div className="card-body ">
             <div>
 
-             
-             
-              <figure>
-                <AiFillHtml5 className="w-20 h-10"></AiFillHtml5>
+              <figure >
+                <AiFillHtml5 className="w-16 h-10"></AiFillHtml5>
               </figure>
             </div>
 
             <div className="card-actions justify-end">
                 
-                <progress
-                    className="progress progress-secondary w-56 mt-1"
-                    value="90"
-                    max="100"
-                ></progress>
+               
                
 
             </div>
@@ -51,74 +55,60 @@ const Services = () => {
 
 
         {/* 2 */}
-        <div className=" w-4/5  h-40 rounded-lg  mt-10 shadow-2xl  border border-y-4 bg-purple-200 border-purple-950 group hover:animate-bounce bg-gradient-to-b hover:from-purple-400 hover:to-purple-300 transition-colors duration-100 ">
-          <h1 className="mx-2 font-bold text-lg text-purple-950">CSS</h1>
+        <div className=" w-4/5  h-40 rounded-lg  mt-10 shadow-4xl  border border-y-4  bg-gradient-to-r from-purple-950 via-purple-400 to-pink-400 border-purple-950 hover:animate-bounce    transition-colors duration-100 ">
+          <h1 className="mt-2 mx-2 font-serif font-semibold text-md text-purple-200">CSS</h1>
           <div className="card-body ">
             <div>
              
               <figure>
-                <FaCss3Alt className="w-20 h-10"></FaCss3Alt>
+                <FaCss3Alt className="w-16 h-10"></FaCss3Alt>
               </figure>
             </div>
 
             <div className="card-actions justify-end">
                 
-                <progress
-                    className="progress progress-secondary w-56 mt-1"
-                    value="90"
-                    max="100"
-                ></progress>
-                {/* <p className="mx-10">HTML</p> */}
+             
 
             </div>
           </div>
         </div>
 
         {/* 3 */}
-        <div className=" w-4/5  h-40 rounded-lg  mt-10 shadow-2xl  border border-y-4 bg-purple-200 border-purple-950 group hover:animate-bounce bg-gradient-to-b hover:from-purple-400 hover:to-purple-300 transition-colors duration-100 ">
-          <h1 className="mx-2 font-bold text-lg text-purple-950">Tailwind CSS</h1>
+        <div className=" w-4/5  h-40 rounded-lg  mt-10 shadow-4xl  border border-y-4  bg-gradient-to-r from-purple-950 via-purple-400 to-pink-400 border-purple-950 hover:animate-bounce    transition-colors duration-100 ">
+          <h1 className="mt-2 mx-2 font-serif font-semibold text-sm text-purple-200">Tailwind CSS</h1>
           <div className="card-body ">
             <div>
              
               <figure>
                
-                <SiTailwindcss className="w-20 h-10"></SiTailwindcss>
+                <SiTailwindcss className="w-16 h-10 "></SiTailwindcss>
               </figure>
             </div>
 
             <div className="card-actions justify-end">
                 
-                <progress
-                    className="progress progress-secondary w-56 mt-1"
-                    value="80"
-                    max="100"
-                ></progress>
-                {/* <p className="mx-10">HTML</p> */}
+   
 
             </div>
           </div>
         </div>
 
         {/* 4 */}
-        <div className=" w-4/5  h-40 rounded-lg  mt-10 shadow-2xl  border border-y-4 bg-purple-200 border-purple-950 group hover:animate-bounce bg-gradient-to-b hover:from-purple-400 hover:to-purple-300 transition-colors duration-100 ">
-          <h1 className="mx-2 font-bold text-lg text-purple-950">Bootstrap</h1>
+        <div className=" w-4/5  h-40 rounded-lg  mt-10 shadow-4xl  border border-y-4  bg-gradient-to-r from-purple-950 via-purple-400 to-pink-400 border-purple-950 hover:animate-bounce    transition-colors duration-100 ">
+          <h1 className="mt-2 mx-2 font-serif font-semibold text-md text-purple-200">Bootstrap</h1>
           <div className="card-body ">
             <div>
              
               <figure>
                
-                <BsBootstrapFill className="w-20 h-10"></BsBootstrapFill>
+                <BsBootstrapFill className="w-16 h-10"></BsBootstrapFill>
               </figure>
             </div>
 
             <div className="card-actions justify-end">
                 
-                <progress
-                    className="progress progress-secondary w-56 mt-1"
-                    value="70"
-                    max="100"
-                ></progress>
-                {/* <p className="mx-10">HTML</p> */}
+                
+              
 
             </div>
           </div>
@@ -126,24 +116,20 @@ const Services = () => {
 
 
         {/* 5 */}
-        <div className=" w-4/5  h-40 rounded-lg  mt-10 shadow-2xl  border border-y-4 bg-purple-200 border-purple-950 group hover:animate-bounce bg-gradient-to-b hover:from-purple-400 hover:to-purple-300 transition-colors duration-100 ">
-          <h1 className="mx-2 font-bold text-lg text-purple-950">Java Script</h1>
+        <div className=" w-4/5  h-40 rounded-lg  mt-10 shadow-4xl  border border-y-4  bg-gradient-to-r from-purple-950 via-purple-400 to-pink-400 border-purple-950 hover:animate-bounce    transition-colors duration-100 ">
+          <h1 className="mt-2 mx-2 font-serif font-semibold text-md text-purple-200">
+            Java Script</h1>
           <div className="card-body ">
             <div>
              
               <figure>
-                <IoLogoJavascript className="w-20 h-10"></IoLogoJavascript>
+                <IoLogoJavascript className="w-16 h-10 "></IoLogoJavascript>
               </figure>
             </div>
 
             <div className="card-actions justify-end">
                 
-                <progress
-                    className="progress progress-secondary w-56 mt-1"
-                    value="90"
-                    max="100"
-                ></progress>
-                {/* <p className="mx-10">HTML</p> */}
+           
 
             </div>
           </div>
@@ -151,24 +137,19 @@ const Services = () => {
 
 
         {/* 6 */}
-        <div className=" mb-10 w-4/5  h-40 rounded-lg  mt-10 shadow-2xl  border border-y-4 bg-purple-200 border-purple-950 group hover:animate-bounce bg-gradient-to-b hover:from-purple-400 hover:to-purple-300 transition-colors duration-100 ">
-          <h1 className="mx-2 font-bold text-lg text-purple-950">React JS</h1>
+        <div className=" w-4/5  h-40 rounded-lg  mt-10 shadow-4xl  border border-y-4  bg-gradient-to-r from-purple-950 via-purple-400 to-pink-400 border-purple-950 hover:animate-bounce    transition-colors duration-100 ">
+          <h1 className="mt-2 mx-2 font-serif font-semibold text-md text-purple-200">React JS</h1>
           <div className="card-body ">
             <div>
              
               <figure>
-                <FaReact className="w-20 h-10"></FaReact>
+                <FaReact className="w-16 h-10"></FaReact>
               </figure>
             </div>
 
             <div className="card-actions justify-end">
                 
-                <progress
-                    className="progress progress-secondary w-56 mt-1"
-                    value="90"
-                    max="100"
-                ></progress>
-                {/* <p className="mx-10">HTML</p> */}
+                
 
             </div>
           </div>
@@ -178,24 +159,19 @@ const Services = () => {
 
 
         {/* 7 */}
-        <div className=" w-4/5  h-40 rounded-lg  mt-10 shadow-2xl  border border-y-4 bg-purple-200 border-purple-950 group hover:animate-bounce bg-gradient-to-b hover:from-purple-400 hover:to-purple-300 transition-colors duration-100 mb-5 ">
-          <h1 className="mx-2 font-bold text-lg text-purple-950">Express JS</h1>
+        <div className=" w-4/5 mb-10 h-40 rounded-lg  mt-10 shadow-4xl  border border-y-4  bg-gradient-to-r from-purple-950 via-purple-400 to-pink-400 border-purple-950 hover:animate-bounce    transition-colors duration-100 ">
+          <h1 className="mt-2 mx-2 font-serif font-semibold text-md text-purple-200">Express JS</h1>
           <div className="card-body ">
             <div>
              
               <figure>
-                <SiExpress className="w-20 h-10"></SiExpress>
+                <SiExpress className="w-16 h-10"></SiExpress>
               </figure>
             </div>
 
             <div className="card-actions justify-end">
                 
-                <progress
-                    className="progress progress-secondary w-56 mt-1"
-                    value="80"
-                    max="100"
-                ></progress>
-                {/* <p className="mx-10">HTML</p> */}
+                
 
             </div>
           </div>
@@ -203,24 +179,19 @@ const Services = () => {
 
 
         {/* 8 */}
-        <div className=" w-4/5  h-40 rounded-lg  mt-10 shadow-2xl  border border-y-4 bg-purple-200 border-purple-950 group hover:animate-bounce bg-gradient-to-b hover:from-purple-400 hover:to-purple-300 transition-colors duration-100 mb-5">
-          <h1 className="mx-2 font-bold text-lg text-purple-950">Firebase</h1>
+        <div className=" w-4/5  h-40 rounded-lg  mt-10 shadow-4xl  border border-y-4  bg-gradient-to-r from-purple-950 via-purple-400 to-pink-400 border-purple-950 hover:animate-bounce    transition-colors duration-100 ">
+          <h1 className="mt-2 mx-2 font-serif font-semibold text-md text-purple-200">Firebase</h1>
           <div className="card-body ">
             <div>
              
               <figure>
-                <IoLogoFirebase className="w-20 h-10"></IoLogoFirebase>
+                <IoLogoFirebase className="w-16 h-10"></IoLogoFirebase>
               </figure>
             </div>
 
             <div className="card-actions justify-end">
                 
-                <progress
-                    className="progress progress-secondary w-56 mt-1"
-                    value="95"
-                    max="100"
-                ></progress>
-                {/* <p className="mx-10">HTML</p> */}
+                
 
             </div>
           </div>
@@ -228,30 +199,66 @@ const Services = () => {
 
 
         {/* 9*/}
-        <div className=" w-4/5  h-40 rounded-lg  mt-10 shadow-2xl  border border-y-4 bg-purple-200 border-purple-950 group hover:animate-bounce bg-gradient-to-b hover:from-purple-400 hover:to-purple-300 transition-colors duration-100 ">
-          <h1 className="mx-2 font-bold text-lg text-purple-950">Mongo DB</h1>
+        <div className=" w-4/5  h-40 rounded-lg  mt-10 shadow-4xl  border border-y-4  bg-gradient-to-r from-purple-950 via-purple-400 to-pink-400 border-purple-950 hover:animate-bounce    transition-colors duration-100 ">
+          <h1 className="mt-2 mx-2 font-serif font-semibold text-md text-purple-200">Mongo DB</h1>
           <div className="card-body ">
             <div>
              
               <figure>
-                <SiMongodb className="w-20 h-10"></SiMongodb>
+                <SiMongodb className="w-16 h-10"></SiMongodb>
               </figure>
             </div>
 
             <div className="card-actions justify-end">
                 
-                <progress
-                    className="progress progress-secondary w-56 mt-1"
-                    value="80"
-                    max="100"
-                ></progress>
+             
         
 
             </div>
           </div>
         </div>
 
-      </div>
+        {/* 10 */}
+
+        <div className=" w-4/5  h-40 rounded-lg  mt-10 shadow-4xl  border border-y-4  bg-gradient-to-r from-purple-950 via-purple-400 to-pink-400 border-purple-950 hover:animate-bounce    transition-colors duration-100 ">
+          <h1 className="mt-2 mx-2 font-serif font-semibold text-md text-purple-200">Vercel</h1>
+          <div className="card-body ">
+            <div>
+             
+              <figure>
+                <IoLogoVercel className="w-16 h-10"></IoLogoVercel>
+              </figure>
+            </div>
+
+            <div className="card-actions justify-end">
+                
+            
+        
+
+            </div>
+          </div>
+        </div>
+
+        {/* 11 */}
+        <div className=" w-4/5  h-40 rounded-lg  mt-10 shadow-4xl  border border-y-4  bg-gradient-to-r from-purple-950 via-purple-400 to-pink-400 border-purple-950 hover:animate-bounce    transition-colors duration-100 ">
+          <h1 className="mt-2 mx-2 font-serif font-semibold text-md text-purple-200">Netlify</h1>
+          <div className="card-body ">
+            <div>
+             
+              <figure>
+                <BiLogoNetlify className="w-16 h-10"></BiLogoNetlify>
+              </figure>
+            </div>
+
+            <div className="card-actions justify-end">
+       
+        
+
+            </div>
+          </div>
+        </div>
+
+      </motion.div>
     </div>
   );
 };
