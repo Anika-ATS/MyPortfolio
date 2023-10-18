@@ -1,0 +1,59 @@
+import React, { useState } from "react";
+//  import { Link } from "react-scroll";
+import Education from "./Education";
+import ProfessionalSkill from "./ProfessionalSkill";
+import Experience from "./Experience";
+import Achievement from "./Achievement";
+
+
+const Resume = () => {
+    const [EducationData,setEducationData]=useState(true)
+    const [SkillData,setSkillData]=useState(false)
+    const [ExperienceData,setExperienceData]=useState(false)
+    const [AchivementData,setAchievementData]=useState(false)
+
+
+
+
+
+  return (
+    <div className=" min-h-screen bg-purple-100 " id="resume">
+      <div className="p-8">
+        <h1 className=" text-4xl font-bold text-purple-950  text-center mb-5">
+          My Resume
+        </h1>
+        <div className="p-4 bg-opacity-30 border-b-[1px] border-l-[4px] border-purple-950 bg-purple-200 ">
+          <ul className="w-full grid grid-cols-4 text-center text-purple-950 font-bold text-lg cursor-pointer  ">
+            
+            <li onClick={()=>setEducationData(true)} className=" hover:bg-purple-950" >
+                Education
+            </li>
+
+            <li onClick={()=>setEducationData(false) && setSkillData(true) }>
+                Professional Skill
+            </li>
+
+
+            <li onClick={()=>setEducationData(false) && setExperienceData(true)}>
+                Experience
+            </li>
+
+
+            <li onClick={()=>setEducationData(false) && setAchievementData(true)}>
+                Achivements
+            </li>
+          </ul>
+        </div>
+        {/* resume */}
+        
+          {EducationData && <Education></Education>} 
+          {SkillData && <ProfessionalSkill></ProfessionalSkill>}
+          {ExperienceData && <Experience></Experience>}
+          {AchivementData && <Achievement></Achievement>}
+        
+      </div>
+    </div>
+  );
+};
+
+export default Resume;
