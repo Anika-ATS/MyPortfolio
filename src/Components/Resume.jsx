@@ -48,13 +48,18 @@ const Resume = () => {
                  onClick={()=> setExperienceData(true)
                                & setSkillData(false)
                                & setEducationData(false) 
-                               & setExperienceData(false) }>
+                               & setAchievementData(false) }>
                 Experience
             </li>
 
 
             <li className="text-md hover:scale-150 duration-300 ..."
-                onClick={()=>setEducationData(false) & setAchievementData(true)}>
+                onClick={()=> setAchievementData(true)
+                              & setEducationData(false) 
+                              & setSkillData(false)
+                              & setExperienceData(false)
+                
+                }>
                 Achivements
             </li>
           </ul>

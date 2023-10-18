@@ -1,6 +1,7 @@
-import React from "react";
-import lu from "../assets/imges/luLogo.jpg";
+
 import { motion } from "framer-motion";
+
+
 const ProfessionalSkill = () => {
   return (
     <motion.div  initial={{opacity:0}}
@@ -120,8 +121,8 @@ const ProfessionalSkill = () => {
                 <p className="text-md font-semibold font-serif uppercase ">HTML</p>
                 <span className="w-2/3 h-2 mt-2 bg-purple-900 inline-flex rounded-md">
                 <motion.span 
-                    initial={{x:'-100%',opacity:0}}
-                    animate={{x:0,opacity:1}}
+                    initial={{y:'-100%',opacity:0}}
+                    animate={{y:0,opacity:1}}
                     transition={{duration:0.5,delay:0.5}}
                      className="w-[95%] h-full bg-gradient-to-r from-purple-300          via-purple-400 to-pink-600 rounded-md relative"
 

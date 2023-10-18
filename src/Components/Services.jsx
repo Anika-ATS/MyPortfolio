@@ -4,7 +4,7 @@ import { FaCss3Alt } from "react-icons/fa";
 import { Player } from "@lottiefiles/react-lottie-player";
 import {SiTailwindcss} from "react-icons/si";
 import {IoLogoJavascript} from "react-icons/io";
-import Skill from "../assets/animation_lnr4vvfz.json";
+import Skill from "../assets/html.json";
 import {FaReact} from "react-icons/fa";
 import {BsBootstrapFill} from "react-icons/bs";
 import {BiLogoNetlify} from "react-icons/bi";
