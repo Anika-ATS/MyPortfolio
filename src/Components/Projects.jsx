@@ -28,7 +28,7 @@ const Projects = () => {
             {/* 1st project */}
             <motion.div  initial={{x:'-100%',opacity:0}}
                     animate={{x:0,opacity:1}}
-                    transition={{duration:1.4,delay:1.4}}
+                    transition={{duration:2,delay:2}}
              className="card w-96   ... ring-2 ring-purple-950  shadow-4xl bg-gradient-to-r from-purple-900 via-purple-400 to-pink-400 hover:text-white   hover:z-50 ">
               <figure className="px-10 pt-10">
                 <img src={pilates} alt="" className="rounded-xl" />
@@ -80,7 +80,7 @@ const Projects = () => {
             {/* 2nd project */}
             <motion.div  initial={{x:'-100%',opacity:0}}
                     animate={{x:0,opacity:1}}
-                    transition={{duration:1,delay:1}}
+                    transition={{duration:1.5,delay:1.5}}
                 className="card w-96   ... ring-2 ring-purple-950  shadow-4xl bg-gradient-to-r from-purple-900 via-purple-400 to-pink-400 hover:text-white   hover:z-50 ">
               <figure className="px-10 pt-10">
                 <img src={Nyamapic} alt="" className="rounded-xl" />
@@ -135,7 +135,7 @@ const Projects = () => {
             {/* 3rd project */}
             <motion.div  initial={{x:'-100%',opacity:0}}
                     animate={{x:0,opacity:1}}
-                    transition={{duration:0.5,delay:0.5}}
+                    transition={{duration:1,delay:1}}
              className="card w-96   ... ring-2 ring-purple-950  shadow-4xl bg-gradient-to-r from-purple-900 via-purple-400 to-pink-400 hover:text-white   hover:z-50 ">
               <figure className="px-10 pt-8">
                 <img src={chef} alt="" className="h-48 w-64 rounded-xl" />

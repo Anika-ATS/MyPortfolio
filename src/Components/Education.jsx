@@ -12,7 +12,7 @@ const Education = () => {
                 
                 initial={{y:'-100%',opacity:0}}
                 animate={{y:0,opacity:1}}
-                transition={{duration:0.5,delay:0.5}}
+                transition={{duration:2,delay:2}}
     
     
                 className='flex flex-col items-center mt-28 '>
@@ -34,7 +34,7 @@ const Education = () => {
           <h2 className="card-title text-sm font-serif text-purple-950 hover:text-white">Leading University, Sylhet.</h2>
           <p className='text-sm text-purple-950 hover:text-white'>I have graduated with a Bachelor of Science degree in Computer Science & Engineering.</p>
           <p className='text-sm text-purple-950 hover:text-white'>Year:2019-2023</p>
-          {/* <p className='text-lg font-mono bg-clip-text text-transparent bg-gradient-to-r from-purple-950 via-purple-400 to-pink-400 hover:text-white'>CGPA:3.61/4</p> */}
+         
          
         
         </div>

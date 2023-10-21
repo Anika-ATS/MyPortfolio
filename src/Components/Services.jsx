@@ -19,22 +19,24 @@ import { motion } from "framer-motion";
 
 const Services = () => {
   return (
-    <div className="h-min   bg-purple-200" id="skill">
+    <div      
+        className="h-min   bg-purple-200" id="skill">
       <div className="mx-5 flex ">
         <div className="mx-5 w-12 mt-5 ">
           <Player src={Skill} className="player  " loop autoplay />
         </div>
         <h1 className=" text-4xl font-bold text-purple-950 mt-8">My Skills </h1>
       </div>
-      <motion.div className="mx-40 grid grid-cols-6  "
+      <div className="mx-40 grid grid-cols-6  "
       
-                  initial={{x:'-100%',opacity:0}}
-                  animate={{x:0,opacity:1}}
-                  transition={{duration:0.5,delay:0.5}}
+             
       
       >
         {/* 1 */}
-        <div className=" w-4/5  h-40 rounded-lg  mt-10 shadow-4xl  border border-y-4  bg-gradient-to-r from-purple-950 via-purple-400 to-pink-400 border-purple-950 hover:animate-bounce    transition-colors duration-100 ">
+        <motion.div  initial={{x:'-100%',opacity:0}}
+                      animate={{x:0,opacity:1}}
+                      transition={{duration:2.8,delay:2.8}}
+        className=" w-4/5  h-40 rounded-lg  mt-10 shadow-4xl  border border-y-4  bg-gradient-to-r from-purple-950 via-purple-400 to-pink-400 border-purple-950 hover:animate-bounce    transition-colors duration-100 ">
           <h1 className="mt-2 mx-2 font-serif font-semibold text-md text-purple-200">HTML</h1>
           <div className="card-body ">
             <div>
@@ -51,11 +53,16 @@ const Services = () => {
 
             </div>
           </div>
-        </div>
+        </motion.div>
+
+
 
 
         {/* 2 */}
-        <div className=" w-4/5  h-40 rounded-lg  mt-10 shadow-4xl  border border-y-4  bg-gradient-to-r from-purple-950 via-purple-400 to-pink-400 border-purple-950 hover:animate-bounce    transition-colors duration-100 ">
+        <motion.div   initial={{x:'-100%',opacity:0}}
+                      animate={{x:0,opacity:1}}
+                      transition={{duration:2.6,delay:2.6}}    
+        className=" w-4/5  h-40 rounded-lg  mt-10 shadow-4xl  border border-y-4  bg-gradient-to-r from-purple-950 via-purple-400 to-pink-400 border-purple-950 hover:animate-bounce    transition-colors duration-100 ">
           <h1 className="mt-2 mx-2 font-serif font-semibold text-md text-purple-200">CSS</h1>
           <div className="card-body ">
             <div>
@@ -71,10 +78,14 @@ const Services = () => {
 
             </div>
           </div>
-        </div>
+        </ motion.div>
 
         {/* 3 */}
-        <div className=" w-4/5  h-40 rounded-lg  mt-10 shadow-4xl  border border-y-4  bg-gradient-to-r from-purple-950 via-purple-400 to-pink-400 border-purple-950 hover:animate-bounce    transition-colors duration-100 ">
+        <motion.div initial={{x:'-100%',opacity:0}}
+                      animate={{x:0,opacity:1}}
+                      transition={{duration:2.3,delay:2.3}}
+        
+         className=" w-4/5  h-40 rounded-lg  mt-10 shadow-4xl  border border-y-4  bg-gradient-to-r from-purple-950 via-purple-400 to-pink-400 border-purple-950 hover:animate-bounce    transition-colors duration-100 ">
           <h1 className="mt-2 mx-2 font-serif font-semibold text-sm text-purple-200">Tailwind CSS</h1>
           <div className="card-body ">
             <div>
@@ -91,10 +102,13 @@ const Services = () => {
 
             </div>
           </div>
-        </div>
+        </motion.div>
 
         {/* 4 */}
-        <div className=" w-4/5  h-40 rounded-lg  mt-10 shadow-4xl  border border-y-4  bg-gradient-to-r from-purple-950 via-purple-400 to-pink-400 border-purple-950 hover:animate-bounce    transition-colors duration-100 ">
+        <motion.div  initial={{x:'-100%',opacity:0}}
+                      animate={{x:0,opacity:1}}
+                      transition={{duration:0.5,delay:0.5}}
+                       className=" w-4/5  h-40 rounded-lg  mt-10 shadow-4xl  border border-y-4  bg-gradient-to-r from-purple-950 via-purple-400 to-pink-400 border-purple-950 hover:animate-bounce    transition-colors duration-100 ">
           <h1 className="mt-2 mx-2 font-serif font-semibold text-md text-purple-200">Bootstrap</h1>
           <div className="card-body ">
             <div>
@@ -112,11 +126,14 @@ const Services = () => {
 
             </div>
           </div>
-        </div>
+        </motion.div>
 
 
         {/* 5 */}
-        <div className=" w-4/5  h-40 rounded-lg  mt-10 shadow-4xl  border border-y-4  bg-gradient-to-r from-purple-950 via-purple-400 to-pink-400 border-purple-950 hover:animate-bounce    transition-colors duration-100 ">
+        <motion.div initial={{x:'+100%',opacity:0}}
+                      animate={{x:0,opacity:1}}
+                      transition={{duration:0.9,delay:0.9}}
+                       className=" w-4/5  h-40 rounded-lg  mt-10 shadow-4xl  border border-y-4  bg-gradient-to-r from-purple-950 via-purple-400 to-pink-400 border-purple-950 hover:animate-bounce    transition-colors duration-100 ">
           <h1 className="mt-2 mx-2 font-serif font-semibold text-md text-purple-200">
             Java Script</h1>
           <div className="card-body ">
@@ -133,11 +150,14 @@ const Services = () => {
 
             </div>
           </div>
-        </div>
+        </motion.div>
 
 
         {/* 6 */}
-        <div className=" w-4/5  h-40 rounded-lg  mt-10 shadow-4xl  border border-y-4  bg-gradient-to-r from-purple-950 via-purple-400 to-pink-400 border-purple-950 hover:animate-bounce    transition-colors duration-100 ">
+        <motion.div  initial={{x:'+100%',opacity:0}}
+                      animate={{x:0,opacity:1}}
+                      transition={{duration:1.2,delay:1.2}}
+                      className=" w-4/5  h-40 rounded-lg  mt-10 shadow-4xl  border border-y-4  bg-gradient-to-r from-purple-950 via-purple-400 to-pink-400 border-purple-950 hover:animate-bounce    transition-colors duration-100 ">
           <h1 className="mt-2 mx-2 font-serif font-semibold text-md text-purple-200">React JS</h1>
           <div className="card-body ">
             <div>
@@ -153,13 +173,16 @@ const Services = () => {
 
             </div>
           </div>
-        </div>
+        </motion.div>
         
 
 
 
         {/* 7 */}
-        <div className=" w-4/5 mb-10 h-40 rounded-lg  mt-10 shadow-4xl  border border-y-4  bg-gradient-to-r from-purple-950 via-purple-400 to-pink-400 border-purple-950 hover:animate-bounce    transition-colors duration-100 ">
+        <motion.div initial={{x:'-100%',opacity:0}}
+                      animate={{x:0,opacity:1}}
+                      transition={{duration:1.3,delay:1.3}}
+                       className=" w-4/5 mb-10 h-40 rounded-lg  mt-10 shadow-4xl  border border-y-4  bg-gradient-to-r from-purple-950 via-purple-400 to-pink-400 border-purple-950 hover:animate-bounce    transition-colors duration-100 ">
           <h1 className="mt-2 mx-2 font-serif font-semibold text-md text-purple-200">Express JS</h1>
           <div className="card-body ">
             <div>
@@ -175,11 +198,14 @@ const Services = () => {
 
             </div>
           </div>
-        </div>
+        </motion.div>
 
 
         {/* 8 */}
-        <div className=" w-4/5  h-40 rounded-lg  mt-10 shadow-4xl  border border-y-4  bg-gradient-to-r from-purple-950 via-purple-400 to-pink-400 border-purple-950 hover:animate-bounce    transition-colors duration-100 ">
+        <motion.div  initial={{x:'-100%',opacity:0}}
+                      animate={{x:0,opacity:1}}
+                      transition={{duration:1,delay:1}}
+                       className=" w-4/5  h-40 rounded-lg  mt-10 shadow-4xl  border border-y-4  bg-gradient-to-r from-purple-950 via-purple-400 to-pink-400 border-purple-950 hover:animate-bounce    transition-colors duration-100 ">
           <h1 className="mt-2 mx-2 font-serif font-semibold text-md text-purple-200">Firebase</h1>
           <div className="card-body ">
             <div>
@@ -195,11 +221,14 @@ const Services = () => {
 
             </div>
           </div>
-        </div>
+        </motion.div>
 
 
         {/* 9*/}
-        <div className=" w-4/5  h-40 rounded-lg  mt-10 shadow-4xl  border border-y-4  bg-gradient-to-r from-purple-950 via-purple-400 to-pink-400 border-purple-950 hover:animate-bounce    transition-colors duration-100 ">
+        <motion.div   initial={{x:'-100%',opacity:0}}
+                      animate={{x:0,opacity:1}}
+                      transition={{duration:0.8,delay:0.8}} 
+                      className=" w-4/5  h-40 rounded-lg  mt-10 shadow-4xl  border border-y-4  bg-gradient-to-r from-purple-950 via-purple-400 to-pink-400 border-purple-950 hover:animate-bounce    transition-colors duration-100 ">
           <h1 className="mt-2 mx-2 font-serif font-semibold text-md text-purple-200">Mongo DB</h1>
           <div className="card-body ">
             <div>
@@ -216,11 +245,14 @@ const Services = () => {
 
             </div>
           </div>
-        </div>
+        </motion.div>
 
         {/* 10 */}
 
-        <div className=" w-4/5  h-40 rounded-lg  mt-10 shadow-4xl  border border-y-4  bg-gradient-to-r from-purple-950 via-purple-400 to-pink-400 border-purple-950 hover:animate-bounce    transition-colors duration-100 ">
+        <motion.div  initial={{x:'+100%',opacity:0}}
+                      animate={{x:0,opacity:1}}
+                      transition={{duration:0.2,delay:0.2}}
+                       className=" w-4/5  h-40 rounded-lg  mt-10 shadow-4xl  border border-y-4  bg-gradient-to-r from-purple-950 via-purple-400 to-pink-400 border-purple-950 hover:animate-bounce    transition-colors duration-100 ">
           <h1 className="mt-2 mx-2 font-serif font-semibold text-md text-purple-200">Vercel</h1>
           <div className="card-body ">
             <div>
@@ -237,10 +269,13 @@ const Services = () => {
 
             </div>
           </div>
-        </div>
+        </motion.div>
 
         {/* 11 */}
-        <div className=" w-4/5  h-40 rounded-lg  mt-10 shadow-4xl  border border-y-4  bg-gradient-to-r from-purple-950 via-purple-400 to-pink-400 border-purple-950 hover:animate-bounce    transition-colors duration-100 ">
+        <motion.div initial={{x:'+100%',opacity:0}}
+                      animate={{x:0,opacity:1}}
+                      transition={{duration:.5,delay:.5}}
+                       className=" w-4/5  h-40 rounded-lg  mt-10 shadow-4xl  border border-y-4  bg-gradient-to-r from-purple-950 via-purple-400 to-pink-400 border-purple-950 hover:animate-bounce    transition-colors duration-100 ">
           <h1 className="mt-2 mx-2 font-serif font-semibold text-md text-purple-200">Netlify</h1>
           <div className="card-body ">
             <div>
@@ -256,9 +291,9 @@ const Services = () => {
 
             </div>
           </div>
-        </div>
+        </motion.div>
 
-      </motion.div>
+      </div>
     </div>
   );
 };
