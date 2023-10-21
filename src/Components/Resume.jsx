@@ -6,6 +6,7 @@ import Experience from "./Experience";
 import Achievement from "./Achievement";
 
 
+
 const Resume = () => {
     const [EducationData,setEducationData]=useState(true)
     const [SkillData,setSkillData]=useState(false)
@@ -60,7 +61,7 @@ const Resume = () => {
                               & setExperienceData(false)
                 
                 }>
-                Achivements
+                Training
             </li>
           </ul>
         </div>
