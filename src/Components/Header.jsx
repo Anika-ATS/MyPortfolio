@@ -97,7 +97,7 @@ const Header = () => {
     
   return (
     <div>
-      <div className=" fixed z-10 navbar w-full bg-opacity-80 bg-purple-300 border-b-[1px] border-b-gray-200 ">
+      <div className=" fixed z-10 navbar w-full bg-opacity-80 bg-gradient-to-r from-pink-300 via-purple-400 to-pink-200 border-b-[1px] border-b-gray-200 ">
         <div className="navbar-start">
           <div className="dropdown">
             <label tabIndex={0} className="btn btn-ghost lg:hidden">

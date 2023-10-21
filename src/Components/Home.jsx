@@ -5,8 +5,9 @@ import L1 from "../assets/animation_lnqk4y37.json";
 // import hello from "../assets/hello2.json";
 import {AiOutlineDownload} from 'react-icons/ai';
 import { Typewriter } from "react-simple-typewriter";
-
-import {BiLogoFacebookCircle,BiLogoInstagramAlt,BiLogoLinkedinSquare}  from 'react-icons/bi'
+// import { Link } from "react-scroll";
+import { BsGithub } from "react-icons/bs";
+import {BiLogoFacebookCircle,BiLogoLinkedinSquare}  from 'react-icons/bi'
 
 
 
@@ -54,8 +55,45 @@ const Home = () => {
             </p>
             
             <div className=" mt-4 flex rounded  gap-4 w-96 bg-purple-300">
-                <button className="shadow-xl font-bold btn glass text-purple-900 hover-group:btn-outline btn-secondary transition-all duration-500   hover:text-white">Collaborate</button>
-                <button className="font-bold btn glass text-purple-900 hover:btn-outline btn-secondary ">My Projects</button>
+                <button className="shadow-xl font-bold btn glass text-purple-900 hover-group:btn-outline btn-secondary transition-all duration-500   hover:text-white">
+                <Link 
+                className="text-purple-900 cursor-pointer " 
+                activeClass="active"
+                to='contact'
+                spy={true}
+                smooth={true}
+                offset={-70}
+                duration={500}
+               > 
+             
+             
+                Collaborate</Link>
+                </button>
+
+
+
+                <button className="font-bold btn glass text-purple-900 hover:btn-outline btn-secondary ">
+                <Link 
+                className="text-purple-900 cursor-pointer " 
+                activeClass="active"
+                to='projects'
+                spy={true}
+                smooth={true}
+                offset={-70}
+                duration={500}
+               > 
+             
+             
+                My Projects</Link>
+                
+                
+                
+                
+                
+                </button>
+
+
+
                 
                <Link to='resume' className="font-bold btn glass text-purple-900 hover-group:btn-outline btn-secondary" >Resume <AiOutlineDownload className='w-8 h-10'></AiOutlineDownload></Link>
             </div>
@@ -65,14 +103,17 @@ const Home = () => {
              </h2>
           
                 <span >  
-                  <BiLogoFacebookCircle className="mt-6 w-8 h-6 "></BiLogoFacebookCircle></span>
+                  <a href="https://www.facebook.com/Anika.ATS?mibextid=ZbWKwL">
 
-                <span >
-                  <BiLogoInstagramAlt className="mt-6 w-8 h-6"></BiLogoInstagramAlt>
+                  <BiLogoFacebookCircle className="mt-6 w-8 h-6 "></BiLogoFacebookCircle>
+                  </a></span>
 
-                </span>
+                  <span > <a href='https://github.com/Anika-ATS'>
+                  < BsGithub className="mt-6 w-6 h-6 "></ BsGithub></a>
+                  </span>
                 <span >
-                   <BiLogoLinkedinSquare className="mt-6 w-8 h-6"></BiLogoLinkedinSquare>
+                  <a href="https://www.linkedin.com/in/anika-tabassum-052b7a291/">
+                   <BiLogoLinkedinSquare className="mt-6 w-8 h-6"></BiLogoLinkedinSquare></a>
                 </span>
                 
        

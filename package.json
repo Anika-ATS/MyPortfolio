@@ -12,6 +12,7 @@
   "dependencies": {
     "@lottiefiles/react-lottie-player": "^3.5.3",
     "framer-motion": "^10.16.4",
+    "js-file-download": "^0.4.12",
     "localforage": "^1.10.0",
     "lottie-react": "^2.4.0",
     "match-sorter": "^6.3.1",
