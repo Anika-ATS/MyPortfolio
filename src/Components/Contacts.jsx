@@ -19,13 +19,13 @@ const Contacts = () => {
                Contact me!!
             </p>
 
-            <div className=" mx-20 mt-16 card flex-shrink-0 w-full max-w-sm shadow-2xl bg-gradient-to-r from-pink-300 via-purple-400 to-pink-200 ">
+            <div className=" mx-20 mt-16 card flex-shrink-0 w-full max-w-sm shadow-2xl bg-gradient-to-r from-purple-900  to-pink-300 ">
                 <form className="card-body">
                     <div className="form-control">
                     <label className="label">
-                        <span className="label-text">Email</span>
+                        <span className=" text-md text-white">Email</span>
                     </label>
-                    <input type="email" placeholder="email" className="input input-bordered" required />
+                    <input type="email" placeholder="Email" className="input input-bordered" required />
                     </div>
 
 
@@ -33,13 +33,14 @@ const Contacts = () => {
 
                     <div className="form-control">
                     <label className="label">
-                        <span className="label-text">Message</span>
+                        <span className=" text-md text-white">Message</span>
                     </label>
-                    <input type="text" placeholder="Type here" className="input input-bordered input-lg w-full max-w-xs" />
+                    {/* className="input input-bordered input-lg w-full max-w-xs" */}
+                    <textarea className="textarea textarea-bordered"  placeholder="Type here"  />
                     
                     </div>
                     <div className="form-control mt-6">
-                    <button className="btn bg-gradient-to-r from-pink-300 via-purple-400 to-pink-200 text-purple-950">Contact</button>
+                    <button className="mx-5  btn btn-wide items-center text-purple-900 text-md">Contact</button>
                     </div>
                 </form>
             </div>

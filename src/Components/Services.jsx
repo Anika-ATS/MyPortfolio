@@ -7,10 +7,10 @@ import {IoLogoJavascript} from "react-icons/io";
 import Skill from "../assets/html.json";
 import {FaReact} from "react-icons/fa";
 import {BsBootstrapFill} from "react-icons/bs";
-import {BiLogoNetlify} from "react-icons/bi";
+// import {BiLogoNetlify} from "react-icons/bi";
 import {SiExpress} from "react-icons/si";
 import {IoLogoFirebase} from "react-icons/io5";
-import {IoLogoVercel} from "react-icons/io5";
+import { DiMysql } from "react-icons/di";
 import {SiMongodb} from "react-icons/si";
 
 import { motion } from "framer-motion";
@@ -27,11 +27,10 @@ const Services = () => {
         </div>
         <h1 className=" text-4xl font-bold text-purple-950 mt-8">My Skills </h1>
       </div>
-      <div className="mx-40 grid grid-cols-6  "
       
-             
       
-      >
+      
+      <div className="mx-40 grid grid-cols-5">
         {/* 1 */}
         <motion.div  initial={{x:'-100%',opacity:0}}
                       animate={{x:0,opacity:1}}
@@ -253,12 +252,13 @@ const Services = () => {
                       animate={{x:0,opacity:1}}
                       transition={{duration:0.2,delay:0.2}}
                        className=" w-4/5  h-40 rounded-lg  mt-10 shadow-4xl  border border-y-4  bg-gradient-to-r from-purple-950 via-purple-400 to-pink-400 border-purple-950 hover:animate-bounce    transition-colors duration-100 ">
-          <h1 className="mt-2 mx-2 font-serif font-semibold text-md text-purple-200">Vercel</h1>
+          <h1 className="mt-2 mx-2 font-serif font-semibold text-md text-purple-200">MySQL</h1>
           <div className="card-body ">
             <div>
              
               <figure>
-                <IoLogoVercel className="w-16 h-10"></IoLogoVercel>
+                <DiMysql className="w-16 h-10"></DiMysql >
+                
               </figure>
             </div>
 
@@ -272,7 +272,7 @@ const Services = () => {
         </motion.div>
 
         {/* 11 */}
-        <motion.div initial={{x:'+100%',opacity:0}}
+        {/* <motion.div initial={{x:'+100%',opacity:0}}
                       animate={{x:0,opacity:1}}
                       transition={{duration:.5,delay:.5}}
                        className=" w-4/5  h-40 rounded-lg  mt-10 shadow-4xl  border border-y-4  bg-gradient-to-r from-purple-950 via-purple-400 to-pink-400 border-purple-950 hover:animate-bounce    transition-colors duration-100 ">
@@ -291,7 +291,7 @@ const Services = () => {
 
             </div>
           </div>
-        </motion.div>
+        </motion.div> */}
 
       </div>
     </div>

@@ -13,7 +13,7 @@ const ProfessionalSkill = () => {
       {/* 1st section */}
       <div className="w-1/2 mx-10">
          <div className="py-8 font-serif mx-20">
-            <p className="text-3xl font-semibold text-purple-950">Design Skill</p>
+            <p className="text-3xl font-semibold text-purple-950"> Tools</p>
          </div>
          <div className="mt-5 w-full flex flex-col gap-5">
 
@@ -40,7 +40,7 @@ const ProfessionalSkill = () => {
 
             {/* 2 */}
             <div>
-                <p className="text-md font-semibold font-serif uppercase ">UI design</p>
+                <p className="text-md font-semibold font-serif uppercase ">Visual Studio Code</p>
                 <span className="w-2/3 h-2 mt-2 bg-purple-900 inline-flex rounded-md">
                 <motion.span 
                     initial={{x:'-100%',opacity:0}}
@@ -64,7 +64,7 @@ const ProfessionalSkill = () => {
 
             {/* 3 */}
             <div>
-                <p className="text-md font-semibold font-serif uppercase ">UX design</p>
+                <p className="text-md font-semibold font-serif uppercase ">Firebase Hosting</p>
                 <span className="w-2/3 h-2 mt-2 bg-purple-900 inline-flex rounded-md">
                 <motion.span 
                     initial={{x:'-100%',opacity:0}}
@@ -86,13 +86,13 @@ const ProfessionalSkill = () => {
 
             {/* 4 */}
             <div>
-                <p className="text-md font-semibold font-serif uppercase ">responsive design</p>
+                <p className="text-md font-semibold font-serif uppercase ">Vercel</p>
                 <span className="w-2/3 h-2 mt-2 bg-purple-900 inline-flex rounded-md">
                 <motion.span 
                     initial={{x:'-100%',opacity:0}}
                     animate={{x:0,opacity:1}}
                     transition={{duration:0.5,delay:0.5}}
-                     className="w-[50%] h-full bg-gradient-to-r from-purple-300          via-purple-400 to-pink-600 rounded-md relative"
+                     className="w-[70%] h-full bg-gradient-to-r from-purple-300          via-purple-400 to-pink-600 rounded-md relative"
 
                 >
 
@@ -104,6 +104,81 @@ const ProfessionalSkill = () => {
                 </span>
                 
             </div>
+
+
+
+            {/* 5 */}
+            <div>
+                <p className="text-md font-semibold font-serif uppercase ">Netlify</p>
+                <span className="w-2/3 h-2 mt-2 bg-purple-900 inline-flex rounded-md">
+                <motion.span 
+                    initial={{x:'-100%',opacity:0}}
+                    animate={{x:0,opacity:1}}
+                    transition={{duration:0.5,delay:0.5}}
+                     className="w-[90%] h-full bg-gradient-to-r from-purple-300          via-purple-400 to-pink-600 rounded-md relative"
+
+                >
+
+                  
+                </motion.span>
+
+
+
+                </span>
+                
+            </div>
+
+
+
+
+
+             {/* 6 */}
+             <div>
+                <p className="text-md font-semibold font-serif uppercase ">GIT</p>
+                <span className="w-2/3 h-2 mt-2 bg-purple-900 inline-flex rounded-md">
+                <motion.span 
+                    initial={{x:'-100%',opacity:0}}
+                    animate={{x:0,opacity:1}}
+                    transition={{duration:0.5,delay:0.5}}
+                     className="w-[90%] h-full bg-gradient-to-r from-purple-300          via-purple-400 to-pink-600 rounded-md relative"
+
+                >
+
+                  
+                </motion.span>
+
+
+
+                </span>
+                
+            </div>
+
+             {/* 7 */}
+             <div>
+                <p className="text-md font-semibold font-serif uppercase ">Sublime Text</p>
+                <span className="w-2/3 h-2 mt-2 bg-purple-900 inline-flex rounded-md">
+                <motion.span 
+                    initial={{x:'-100%',opacity:0}}
+                    animate={{x:0,opacity:1}}
+                    transition={{duration:0.5,delay:0.5}}
+                     className="w-[70%] h-full bg-gradient-to-r from-purple-300          via-purple-400 to-pink-600 rounded-md relative"
+
+                >
+
+                  
+                </motion.span>
+
+
+
+                </span>
+                
+            </div>
+
+
+
+
+
+
 
          </div>
       </div>
@@ -118,7 +193,7 @@ const ProfessionalSkill = () => {
 
             {/* 1 */}
             <div>
-                <p className="text-md font-semibold font-serif uppercase ">HTML</p>
+                <p className="text-md font-semibold font-serif uppercase ">HTML </p>
                 <span className="w-2/3 h-2 mt-2 bg-purple-900 inline-flex rounded-md">
                 <motion.span 
                     initial={{y:'-100%',opacity:0}}
@@ -138,7 +213,7 @@ const ProfessionalSkill = () => {
 
 
             {/* 2 */}
-            <div>
+            {/* <div>
                 <p className="text-md font-semibold font-serif uppercase ">CSS</p>
                 <span className="w-2/3 h-2 mt-2 bg-purple-900 inline-flex rounded-md">
                 <motion.span 
@@ -156,14 +231,14 @@ const ProfessionalSkill = () => {
 
                 </span>
                 
-            </div>
+            </div> */}
 
 
 
 
             {/* 3 */}
             <div>
-                <p className="text-md font-semibold font-serif uppercase ">Tailwind css</p>
+                <p className="text-md font-semibold font-serif uppercase ">Tailwind css & Daisy UI</p>
                 <span className="w-2/3 h-2 mt-2 bg-purple-900 inline-flex rounded-md">
                 <motion.span 
                     initial={{x:'-100%',opacity:0}}
@@ -185,13 +260,13 @@ const ProfessionalSkill = () => {
 
             {/* 4 */}
             <div>
-                <p className="text-md font-semibold font-serif uppercase ">Bootstrap</p>
+                <p className="text-md font-semibold font-serif uppercase "> CSS & Bootstrap</p>
                 <span className="w-2/3 h-2 mt-2 bg-purple-900 inline-flex rounded-md">
                 <motion.span 
                     initial={{x:'-100%',opacity:0}}
                     animate={{x:0,opacity:1}}
                     transition={{duration:0.5,delay:0.5}}
-                     className="w-[60%] h-full bg-gradient-to-r from-purple-300          via-purple-400 to-pink-600 rounded-md relative"
+                     className="w-[80%] h-full bg-gradient-to-r from-purple-300          via-purple-400 to-pink-600 rounded-md relative"
 
                 >
 
@@ -282,7 +357,7 @@ const ProfessionalSkill = () => {
 
             {/* 8 */}
             <div>
-                <p className="text-md font-semibold font-serif uppercase ">Firebase</p>
+                <p className="text-md font-semibold font-serif uppercase ">MySQL</p>
                 <span className="w-2/3 h-2 mt-2 bg-purple-900 inline-flex rounded-md">
                 <motion.span 
                     initial={{x:'-100%',opacity:0}}
@@ -327,7 +402,7 @@ const ProfessionalSkill = () => {
 
 
             {/* 10 */}
-            <div>
+            {/* <div>
                 <p className="text-md font-semibold font-serif uppercase ">Vercel</p>
                 <span className="w-2/3 h-2 mt-2 bg-purple-900 inline-flex rounded-md">
                 <motion.span 
@@ -345,31 +420,12 @@ const ProfessionalSkill = () => {
 
                 </span>
                 
-            </div>
+            </div> */}
 
 
 
 
-            {/* 11 */}
-            <div>
-                <p className="text-md font-semibold font-serif uppercase ">Netlify</p>
-                <span className="w-2/3 h-2 mt-2 bg-purple-900 inline-flex rounded-md">
-                <motion.span 
-                    initial={{x:'-100%',opacity:0}}
-                    animate={{x:0,opacity:1}}
-                    transition={{duration:0.5,delay:0.5}}
-                     className="w-[90%] h-full bg-gradient-to-r from-purple-300          via-purple-400 to-pink-600 rounded-md relative"
-
-                >
-
-                  
-                </motion.span>
-
-
-
-                </span>
-                
-            </div>
+           
 
          </div>
       </div>

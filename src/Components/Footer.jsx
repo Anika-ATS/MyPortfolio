@@ -6,13 +6,13 @@ import { MdOutlineMarkEmailUnread } from "react-icons/md";
 const Footer = () => {
   return (
     <div>
-      <footer className="footer footer-center p-5 bg-gradient-to-r from-pink-300 via-purple-400 to-pink-200 text-base-content rounded">
+      <footer className="footer footer-center p-5 bg-gradient-to-r from-purple-900 to-pink-300 text-base-content rounded">
         <nav className="grid grid-flow-col gap-4">
 
 
               <li  className="font-bold font-serif cursor-pointer flex items-center text-lg gap-2" >
                 <Link 
-                  className="text-purple-900 cursor-pointer " 
+                  className="text-purple-950 text-md cursor-pointer " 
                   activeClass="active"
                   to='about'
                   spy={true}
@@ -28,7 +28,7 @@ const Footer = () => {
 
             <li  className="font-bold cursor-pointer flex items-center text-lg gap-1" >
               <Link 
-               className="text-purple-900 cursor-pointer " 
+               className="text-purple-950 text-md cursor-pointer " 
                activeClass="active"
                to='contact'
                spy={true}
@@ -43,7 +43,7 @@ const Footer = () => {
 
             <li  className="font-bold cursor-pointer flex items-center text-lg gap-1" >
             <Link 
-               className="text-purple-900 cursor-pointer " 
+               className="text-purple-950 text-md cursor-pointer " 
                activeClass="active"
                to='projects'
                spy={true}
@@ -62,7 +62,7 @@ const Footer = () => {
           <div className="grid grid-flow-col gap-4">
 
                 <span > <a href='https://github.com/Anika-ATS'>
-                  < BsGithub className="mt-3 w-9 h-9 "></ BsGithub></a>
+                  < BsGithub className="mt-4 w-9 h-8 "></ BsGithub></a>
                   </span>
                 <span > <a href='https://www.facebook.com/Anika.ATS?mibextid=ZbWKwL'>
                   <BiLogoFacebookCircle className="mt-3 w-10 h-10 "></BiLogoFacebookCircle></a>
@@ -87,7 +87,7 @@ const Footer = () => {
                  <p className="font-bold cursor-pointer flex items-center text-lg gap-1 mb-5 ">
                   <MdOutlineMarkEmailUnread className=" w-5 h-5 "></MdOutlineMarkEmailUnread> :
                  <span>
-                   <a href='https://mail.google.com/mail/u/0'> tabassumanika210@gmail.com</a>
+                   <a className=" text-md " href='https://mail.google.com/mail/u/0'> tabassumanika210@gmail.com</a>
                  </span></p>
 
               </aside>
