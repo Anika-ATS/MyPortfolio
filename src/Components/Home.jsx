@@ -12,15 +12,15 @@ import { BsGithub } from "react-icons/bs";
 import { BiLogoFacebookCircle, BiLogoLinkedinSquare } from "react-icons/bi";
 
 // import L2 from "../assets/animation_lnqjdx8d.json";
-  const Home = () => {
-      const handleDownload = () => {
-        fileDownload(CVPdfFile, "Anika tabassum_2.pdf");
-      };
+const Home = () => {
+  const handleDownload = () => {
+    fileDownload(CVPdfFile, "Anika tabassum_2.pdf");
+  };
 
   return (
-    <div id="home">
-      <div className="hero min-h-screen  bg-purple-200">
-        <div className="hero-content flex-col lg:flex-row sm:flex-col mt-5">
+    <div id="home" className="w-full ">
+      <div className=" bg-purple-200">
+        <div className="hero-content flex-col lg:flex-row sm:flex-col ">
           <div className="card-body mt-5 ">
             <Player src={L1} className="player  " loop autoplay />
           </div>
@@ -57,9 +57,11 @@ import { BiLogoFacebookCircle, BiLogoLinkedinSquare } from "react-icons/bi";
               to turn imagination into interactive digital reality. Let's build
               something amazing together!
             </p>
-              {/*  sm:  flex-col -ms-6 */}
-            <div className=" mt-4 rounded w-96 bg-purple-300 gap-4 lg: flex 
-                           ">
+            {/*  sm:  flex-col -ms-6 */}
+            <div
+              className=" mt-4 rounded w-96 bg-purple-300 gap-4 lg: flex 
+                           "
+            >
               <button className="shadow-xl font-bold btn glass text-purple-900 hover-group:btn-outline btn-secondary transition-all duration-500   hover:text-white  ">
                 {/* sm:w-1/3 */}
                 <Link
@@ -89,10 +91,9 @@ import { BiLogoFacebookCircle, BiLogoLinkedinSquare } from "react-icons/bi";
                 </Link>
               </button>
 
-             {/* modal */}
+              {/* modal */}
               <label
                 htmlFor="my_modal_7"
-           
                 className="font-bold btn glass text-purple-900 
                hover-group:btn-outline btn-secondary "
               >
@@ -104,12 +105,18 @@ import { BiLogoFacebookCircle, BiLogoLinkedinSquare } from "react-icons/bi";
               <input type="checkbox" id="my_modal_7" className="modal-toggle" />
               <div className="modal">
                 <div className="modal-box">
-                  <h3 className="text-lg font-bold font-serif text-purple-950">Hello!</h3>
+                  <h3 className="text-lg font-bold font-serif text-purple-950">
+                    Hello!
+                  </h3>
                   <p className="py-4 text-purple-950">
-                    Here you can  download my CV!
+                    Here you can download my CV!
                   </p>
-                  <button  onClick={handleDownload} 
-                  className="btn btn-md  btn-circle bg-gradient-to-r from-pink-400 via-purple-400 to-purple-950 text-white">CV</button>
+                  <button
+                    onClick={handleDownload}
+                    className="btn btn-md  btn-circle bg-gradient-to-r from-pink-400 via-purple-400 to-purple-950 text-white"
+                  >
+                    CV
+                  </button>
                 </div>
                 <label className="modal-backdrop" htmlFor="my_modal_7">
                   Close

@@ -92,7 +92,7 @@ const Footer = () => {
 
               </aside>
               <p className="font-bold cursor-pointer flex items-center text-lg gap-1 mb-5 ">
-                <BsFillTelephoneOutboundFill className=" w-5 h-5 "></BsFillTelephoneOutboundFill>:01305658600
+                <BsFillTelephoneOutboundFill className=" w-5 h-5 "></BsFillTelephoneOutboundFill>:+8801305658600
               </p>
         </div>
         </nav>
