@@ -14,11 +14,11 @@ const Resume = () => {
   return (
     <div className=" min-h-screen  bg-purple-100 " id="resume">
       <div className="p-8 ">
-        <h1 className=" text-4xl font-bold text-purple-950  text-center mt-16 mb-10">
+        <h1 className=" text-4xl font-bold text-purple-950  text-center mt-10 mb-10">
           Resume
         </h1>
         <div className="p-4 bg-opacity-30 border-b-[1px] border-l-[4px] border-purple-950 bg-purple-200 ">
-          <ul className="w-full grid grid-cols-4 text-center text-purple-950 font-bold text-lg cursor-pointer  ">
+          <ul className="w-full grid grid-cols-2 sm:grid-cols-4 text-center text-purple-950 font-bold text-base md:text-lg cursor-pointer">
             <li
               className="text-md hover:scale-150 duration-300 ..."
               onClick={() =>

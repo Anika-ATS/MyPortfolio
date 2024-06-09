@@ -49,7 +49,7 @@ const Contacts = () => {
     >
       {" "}
       <p
-        className="text-5xl my-5 p-5 text-center font-bold bg-clip-text text-transparent bg-gradient-to-r from-pink-300 via-purple-800 to-purple-950"
+        className="text-3xl  my-5 p-5 text-center font-bold bg-clip-text text-transparent bg-gradient-to-r from-pink-300 via-purple-800 to-purple-950"
         // className="text-3xl text-center  font-semibold text-purple-950"
       >
         {" "}
@@ -63,21 +63,21 @@ const Contacts = () => {
           loop
         ></Typewriter>
       </p>
-      <h1 className="text-5xl mx-96 my-4 font-semibold text-purple-950 flex gap-6 ">
+      <h1 className="text-xl mx-10   md:text-4xl md:mx-48 my-4 font-semibold text-purple-950 flex gap-6 lg:mx-96 lg:text-4xl">
         {" "}
         Connect With Me
         <span>
-          <FaHandshake className="mt-2 w-10 h-10 "></FaHandshake>
+          <FaHandshake className="mt-2 w-10 h-5 md:h-10 lg:10"></FaHandshake>
         </span>
       </h1>
       <motion.div
         initial={{ opacity: 0 }}
         animate={{ opacity: 1, transition: { duration: 1 } }}
-        className=" min-h-screen  flex "
+        className=" min-h-screen flex flex-col md:flex-col lg:flex-row "
       >
         {/* 1st section */}
 
-        <div className="w-full mx-16 items-center justify-evenly  flex flex-row">
+        <div className="w-full items-center justify-evenly  flex flex-col lg:flex-row">
           <div className="  font-serif mx-6">
             <div className="card mx-8 w-full max-w-sm shadow-2xl bg-gradient-to-r from-purple-900  to-pink-300 ">
               <form ref={form} onSubmit={sendEmail} className="card-body  w-96">
@@ -133,7 +133,7 @@ const Contacts = () => {
 
           {/* middle */}
 
-          <div className="flex flex-col  mx-24 ">
+          <div className="flex flex-row gap-5  md:flex-row md:gap-8 md:py-8 lg:flex-col  mx-24 ">
             {/* <h2 className="mt-5   font-bold text-3xl bg-clip-text text-transparent bg-gradient-to-r from-pink-400 via-purple-400 to-purple-950">
               {" "}
             </h2> */}
@@ -169,7 +169,7 @@ const Contacts = () => {
         </div>
 
         {/* 2nd section*/}
-        <div className="w-full ">
+        <div className="w-full mx-12 mb-10 md:mx-60 md:mb-10 lg:mx-10">
           <div className=" mt-12 font-serif ">
             <div className="card mx-8 w-full max-w-sm shadow-2xl bg-gradient-to-r from-purple-900  to-pink-300 -ms-10 mt-20 p-20">
               {/* <div className="card  mt-10 font-serif "> */}

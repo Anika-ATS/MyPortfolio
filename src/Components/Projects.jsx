@@ -10,20 +10,20 @@ import chef from "../assets/imges/thali.jpg";
 
 const Projects = () => {
   return (
-    <div id="projects">
+    <div id="projects ">
       <motion.div
         initial={{ opacity: 0 }}
         animate={{ opacity: 1, transition: { duration: 1 } }}
         className="w-full flex flex-col gap-20 bg-purple-200"
       >
-        <div className="mt-20 mx-auto font-serif">
+        <div className="mt-10 mx-auto font-serif">
           <p className="mx-auto text-3xl font-semibold text-purple-950">
             Projects
           </p>
         </div>
         {/* 1st section */}
-        <div className="mx-auto   ">
-          <div className="mb-16  w-full flex flex-col-3 gap-10 ">
+        <div className="mx-auto">
+          <div className=" mb-10  w-full grid grid-rows-1 gap-5 md:grid-rows-1 md:gap-5 md:mx-auto flex-rows-1 lg:flex flex-col-3 lg:gap-10  ">
             {/* 1st project */}
             <motion.div
               initial={{ x: "-100%", opacity: 0 }}
@@ -31,7 +31,7 @@ const Projects = () => {
               transition={{ duration: 2, delay: 2 }}
               className="card w-96   ... ring-2 ring-purple-950  shadow-4xl bg-gradient-to-r from-purple-900  to-pink-300 hover:text-white   hover:z-50 "
             >
-              <figure className="px-10 pt-10">
+              <figure className="px-10 pt-5">
                 <img src={pilates} alt="" className="rounded-xl" />
               </figure>
 
@@ -86,7 +86,7 @@ const Projects = () => {
               initial={{ x: "-100%", opacity: 0 }}
               animate={{ x: 0, opacity: 1 }}
               transition={{ duration: 1.5, delay: 1.5 }}
-              className="card w-96   ... ring-2 ring-purple-950  shadow-4xl bg-gradient-to-r from-purple-900 to-pink-300 hover:text-white   hover:z-50 "
+              className=" card w-96   ... ring-2 ring-purple-950  shadow-4xl bg-gradient-to-r from-purple-900 to-pink-300  hover:text-white   hover:z-50 "
             >
               <figure className="px-10 pt-10">
                 <img src={Nyamapic} alt="" className="rounded-xl" />
