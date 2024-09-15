@@ -5,15 +5,15 @@ import { AiOutlineDownload } from "react-icons/ai";
 
 import fileDownload from "js-file-download";
 
-import CVPdfFile from "../assets/pdf/Anika tabassum_2.pdf";
-import CVPdfFile2 from "../assets/pdf/Anika tabassum_24.pdf";
+import CVPdfFile from "../assets/pdf/Anika tabassum25.pdf";
+import CVPdfFile2 from "../assets/pdf/AnikaResume.pdf";
 
 const About = () => {
   const handleDownload = () => {
-    fileDownload(CVPdfFile, "Anika tabassum_2.pdf");
+    fileDownload(CVPdfFile, "Anika tabassum25.pdf");
   };
   const handleDownload2 = () => {
-    fileDownload(CVPdfFile2, "Anika tabassum_2.pdf");
+    fileDownload(CVPdfFile2, "AnikaResume.pdf");
   };
 
   return (
@@ -31,11 +31,11 @@ const About = () => {
         I'm Anika Tabassum,a passionate MERN stack developer with a focus on
         front-end design. With a degree in Computer Science and Engineering, I
         enjoy creating user-friendly websites that simplify modern life.
-        Proficient in HTML, CSS, JavaScript, Reactjs, Tailwind CSS,DaisyUi I
-        transform concepts into visually engaging websites. Recently, I've been
-        exploring back-end technologies and pursuing TypeScript to enhance my
-        skills further. I'm dedicated to mastering both front-end and back-end
-        development, making innovation my driving force
+        Proficient in HTML, CSS, JavaScript, Reactjs, Tailwind CSS,DaisyUi. I
+        try to do transform concepts into visually engaging websites. Recently,
+        I've been exploring back-end technologies and pursuing TypeScript to
+        enhance my skills further. I'm dedicated to mastering both front-end and
+        back-end development, making innovation my driving force
       </p>
       <h1 className=" p-5  mb-5 text-sm text-wrap text-justify font-serif  lg:py-4 lg:mx-4 lg:mt-8 lg:text-lg md:text-2xl md:p-16 md:text-wrap">
         {" "}

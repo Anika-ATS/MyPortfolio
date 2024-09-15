@@ -6,13 +6,13 @@ import { AiOutlineDownload } from "react-icons/ai";
 import { Typewriter } from "react-simple-typewriter";
 import fileDownload from "js-file-download";
 
-import CVPdfFile from "../assets/pdf/Anika tabassum_2.pdf";
+import CVPdfFile from "../assets/pdf/Anika tabassum25.pdf";
 import { BsGithub } from "react-icons/bs";
 import { BiLogoFacebookCircle, BiLogoLinkedinSquare } from "react-icons/bi";
 
 const Home = () => {
   const handleDownload = () => {
-    fileDownload(CVPdfFile, "Anika tabassum_2.pdf");
+    fileDownload(CVPdfFile, "Anika tabassum25.pdf");
   };
 
   return (

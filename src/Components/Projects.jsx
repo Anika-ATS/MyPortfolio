@@ -42,7 +42,7 @@ const Projects = () => {
                   </h2>
                   <div className="card-actions flex  flex-row gap-1">
                     <div className="flex  gap-2">
-                      <a href="https://66758d88ff107b92673e5060--preeminent-marzipan-bf309c.netlify.app/">
+                      <a href="https://66e717a7af8a912279cd254d--preeminent-chimera-6d9b4d.netlify.app/">
                         <button className="mx-3 btn btn-xs bg-purple-950 hover-group:btn-outline btn-secondary transition-all duration-500 ">
                           <BsLink45Deg className="text-white"></BsLink45Deg>
                         </button>
@@ -50,7 +50,7 @@ const Projects = () => {
                     </div>
 
                     <div className="flex  gap-1">
-                      <a href="https://github.com/Anika-ATS/BongoChef-client">
+                      <a href="https://github.com/Anika-ATS/MyPortfolio">
                         <button className="mx-3 btn btn-xs  bg-purple-950 hover-group:btn-outline btn-secondary transition-all duration-500 ">
                           <BsGithub className="text-white"></BsGithub>
                         </button>
