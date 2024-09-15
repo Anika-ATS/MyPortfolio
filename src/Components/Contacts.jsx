@@ -47,9 +47,8 @@ const Contacts = () => {
       className="w-full  bg-cover bg-center "
       // style={{ backgroundImage: `url(${P1})` }}
     >
-      {" "}
       <p
-        className="text-3xl  my-5 p-5 text-center font-bold bg-clip-text text-transparent bg-gradient-to-r from-pink-300 via-purple-800 to-purple-950"
+        className="text-3xl mt-5  text-center font-bold bg-clip-text text-transparent bg-gradient-to-r from-pink-300 via-purple-800 to-purple-950 md:mt-9 md:p-4"
         // className="text-3xl text-center  font-semibold text-purple-950"
       >
         {" "}
@@ -63,7 +62,10 @@ const Contacts = () => {
           loop
         ></Typewriter>
       </p>
-      <h1 className="text-xl mx-10   md:text-4xl md:mx-48 my-4 font-semibold text-purple-950 flex gap-6 lg:mx-96 lg:text-4xl">
+      <h1
+        className="text-xl mx-10  my-4  gap-6 font-semibold text-purple-950 flex 
+      md:text-4xl md:mx-48 md:p-4 lg:mx-96 lg:text-4xl"
+      >
         {" "}
         Connect With Me
         <span>
@@ -77,10 +79,11 @@ const Contacts = () => {
       >
         {/* 1st section */}
 
-        <div className="w-full items-center justify-evenly  flex flex-col lg:flex-row">
-          <div className="  font-serif mx-6">
-            <div className="card mx-8 w-full max-w-sm shadow-2xl bg-gradient-to-r from-purple-900  to-pink-300 ">
-              <form ref={form} onSubmit={sendEmail} className="card-body  w-96">
+        <div className="w-full  items-center justify-evenly  flex flex-col  lg:flex-row ">
+          <div className="p-8 mt-8 px-16 mb-12 font-serif mx-8 md:py-5   ">
+            {/* form */}
+            <div className="card  mx-8 w-full max-w-sm shadow-2xl bg-gradient-to-r from-purple-900  to-pink-300 lg:mx-0 ">
+              <form ref={form} onSubmit={sendEmail} className="card-body w-96 ">
                 <div className="form-control">
                   <label>
                     <span className=" text-md text-white ">Name</span>
@@ -133,7 +136,7 @@ const Contacts = () => {
 
           {/* middle */}
 
-          <div className="flex flex-row gap-5  md:flex-row md:gap-8 md:py-8 lg:flex-col  mx-24 ">
+          <div className="flex flex-row  gap-6 mx-16 md:flex-row md:gap-5  md:mt-10 lg:flex-col  lg:mr-24 lg:gap-2 lg:-mt-9  ">
             {/* <h2 className="mt-5   font-bold text-3xl bg-clip-text text-transparent bg-gradient-to-r from-pink-400 via-purple-400 to-purple-950">
               {" "}
             </h2> */}
@@ -169,12 +172,17 @@ const Contacts = () => {
         </div>
 
         {/* 2nd section*/}
-        <div className="w-full mx-12 mb-10 md:mx-60 md:mb-10 lg:mx-10">
-          <div className=" mt-12 font-serif ">
-            <div className="card mx-8 w-full max-w-sm shadow-2xl bg-gradient-to-r from-purple-900  to-pink-300 -ms-10 mt-20 p-20">
+        <div className="w-full p-8 mr-24  mb-10 md:mx-40 md:mb-10 lg:mx-7 lg:mr-64 lg:p-3 ">
+          <div className="">
+            <div className="card  w-full max-w-sm shadow-2xl bg-gradient-to-r from-purple-900  to-pink-300  mt-12 p-20 ">
               {/* <div className="card  mt-10 font-serif "> */}
-              <div className="card-body  rounded-md  shadow-gray-600 ">
-                <Player src={contact2} className="player  " loop autoplay />
+              <div className="card-body -ms-3  rounded-md  shadow-gray-600 lg:mr-32 ">
+                <Player
+                  src={contact2}
+                  className="player w-48  lg:h-52 lg:w-48  "
+                  loop
+                  autoplay
+                />
               </div>
             </div>
           </div>

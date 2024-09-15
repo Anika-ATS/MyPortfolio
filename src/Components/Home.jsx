@@ -18,12 +18,13 @@ const Home = () => {
   return (
     <div id="home" className="w-full">
       <div className="bg-purple-200">
-        <div className="hero-content flex-col  lg:flex-row sm:flex-col md:flex-col">
+        <div className="hero-content flex flex-col  lg:flex-row  md:flex-col">
           <div className="card-body mt-5">
             <Player src={L1} className="player" loop autoplay />
           </div>
-          <div className="flex flex-col justify-center  items-center lg:items-start lg:w-1/2 px-4">
-            <h1 className="mt-24 text-3xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-purple-400 via-purple-950 to-pink-400">
+
+          <div className="flex flex-col justify-center items-center md:gap-4  lg:items-start lg:w-2/3 px-4">
+            <h1 className="mt-24 text-3xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-purple-400 via-purple-950 to-pink-400  md:mt-10 lg:mt-24">
               <Typewriter
                 words={["Hello !!"]}
                 cursor
@@ -48,11 +49,11 @@ const Home = () => {
                 loop
               ></Typewriter>
             </span>
-            <p className="text-wrap py-6 md:text-left md:py-16  lg:text-left">
+            <p className="text-wrap py-6 font-serif font-semibold animate-pulse  md:text-wrap  md:py-4 md:text-xl    lg:text-left">
               As a budding MERN stack developer, I find joy in coding and
-              creating captivating websites. Eager to explore, I'm on a journey
-              to turn imagination into interactive digital reality. Let's build
-              something amazing together!
+              creating captivating websites. I'm also a frontend developer,
+              eager to explore and turn imagination into interactive digital
+              reality. Let's build something amazing together!
             </p>
             <div className="flex flex-col md:flex-col md:items-center lg:flex-row items-center gap-4">
               <button className="shadow-xl font-bold btn glass text-purple-900 hover-group:btn-outline btn-secondary">

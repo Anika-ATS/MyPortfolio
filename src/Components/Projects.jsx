@@ -6,7 +6,7 @@ import { BsGithub } from "react-icons/bs";
 
 import Nyamapic from "../assets/imges/animal1.jpg";
 import pilates from "../assets/imges/P1.1.webp";
-import chef from "../assets/imges/thali.jpg";
+import portfolio from "../assets/imges/portfoliopic.jpg";
 
 const Projects = () => {
   return (
@@ -14,7 +14,7 @@ const Projects = () => {
       <motion.div
         initial={{ opacity: 0 }}
         animate={{ opacity: 1, transition: { duration: 1 } }}
-        className="w-full flex flex-col gap-20 bg-purple-200"
+        className="w-full  flex flex-col gap-20  bg-purple-200"
       >
         <div className="mt-10 mx-auto font-serif">
           <p className="mx-auto text-3xl font-semibold text-purple-950">
@@ -22,14 +22,70 @@ const Projects = () => {
           </p>
         </div>
         {/* 1st section */}
-        <div className="mx-auto">
-          <div className=" mb-10  w-full grid grid-rows-1 gap-5 md:grid-rows-1 md:gap-5 md:mx-auto flex-rows-1 lg:flex flex-col-3 lg:gap-10  ">
+        <div className="mx-auto ">
+          <div className=" mb-16 w-full grid grid-rows-1 gap-10 md:grid-rows-1 md:gap-5 md:mx-auto md:flex-row-1 lg:flex flex-col-3 lg:gap-7  ">
+            {/* portfolio project */}
+            <motion.div
+              initial={{ x: "-100%", opacity: 0 }}
+              animate={{ x: 0, opacity: 1 }}
+              transition={{ duration: 1, delay: 1 }}
+              className="card w-72 mx-auto   ... ring-2 ring-purple-950  shadow-4xl  bg-gradient-to-r from-purple-900  to-pink-300 hover:text-white  hover:z-50
+              lg:w-96 lg:mx-0  md:w-96 md:mx-0 "
+            >
+              <figure className="px-10 pt-8">
+                <img src={portfolio} alt="" className="h-48 w-64 rounded-xl" />
+              </figure>
+              <div className="card-body items-center text-center">
+                <div className="flex flex-col gap-3">
+                  <h2 className=" text-white  card-title text-justify font-serif  text-md">
+                    Personal Portfolio
+                  </h2>
+                  <div className="card-actions flex  flex-row gap-1">
+                    <div className="flex  gap-2">
+                      <a href="https://66758d88ff107b92673e5060--preeminent-marzipan-bf309c.netlify.app/">
+                        <button className="mx-3 btn btn-xs bg-purple-950 hover-group:btn-outline btn-secondary transition-all duration-500 ">
+                          <BsLink45Deg className="text-white"></BsLink45Deg>
+                        </button>
+                      </a>
+                    </div>
+
+                    <div className="flex  gap-1">
+                      <a href="https://github.com/Anika-ATS/BongoChef-client">
+                        <button className="mx-3 btn btn-xs  bg-purple-950 hover-group:btn-outline btn-secondary transition-all duration-500 ">
+                          <BsGithub className="text-white"></BsGithub>
+                        </button>
+                      </a>
+                    </div>
+                    <div className="flex  gap-2">
+                      {/* <a href="https://github.com/Anika-ATS/BongoChef-server">
+                        <button className="mx-3 btn btn-xs  bg-purple-950 hover-group:btn-outline btn-secondary transition-all duration-500 ">
+                          <BsGithub className="text-white"></BsGithub>
+                        </button>
+                      </a> */}
+                    </div>
+                  </div>
+                </div>
+                <p className="p-1 mx-2 text-white   text-xs text-justify font-serif  ">
+                  Hi,this is me,Anika, a passionate MERN stack developer with a
+                  focus on front-end design. With a degree in Computer Science
+                  and Engineering, I enjoy creating user-friendly websites that
+                  simplify modern life. Proficient in HTML, CSS, JavaScript,
+                  Reactjs, Tailwind CSS,DaisyUi I transform concepts into
+                  visually engaging websites. Recently, I've been exploring
+                  back-end technologies and pursuing TypeScript to enhance my
+                  skills further. I'm dedicated to mastering both front-end and
+                  back-end development, making innovation my driving force{" "}
+                </p>
+              </div>
+            </motion.div>
+
             {/* 1st project */}
             <motion.div
               initial={{ x: "-100%", opacity: 0 }}
               animate={{ x: 0, opacity: 1 }}
               transition={{ duration: 2, delay: 2 }}
-              className="card w-96   ... ring-2 ring-purple-950  shadow-4xl bg-gradient-to-r from-purple-900  to-pink-300 hover:text-white   hover:z-50 "
+              className="card w-72 mx-auto   ... ring-2 ring-purple-950  shadow-4xl  bg-gradient-to-r from-purple-900  to-pink-300 hover:text-white  hover:z-50
+              lg:w-96 lg:mx-0 md:w-96 md:mx-0  "
             >
               <figure className="px-10 pt-5">
                 <img src={pilates} alt="" className="rounded-xl" />
@@ -86,7 +142,8 @@ const Projects = () => {
               initial={{ x: "-100%", opacity: 0 }}
               animate={{ x: 0, opacity: 1 }}
               transition={{ duration: 1.5, delay: 1.5 }}
-              className=" card w-96   ... ring-2 ring-purple-950  shadow-4xl bg-gradient-to-r from-purple-900 to-pink-300  hover:text-white   hover:z-50 "
+              className="card w-72 mx-auto   ... ring-2 ring-purple-950  shadow-4xl  bg-gradient-to-r from-purple-900  to-pink-300 hover:text-white  hover:z-50
+              lg:w-96 lg:mx-3 md:w-96 md:mx-0  "
             >
               <figure className="px-10 pt-10">
                 <img src={Nyamapic} alt="" className="rounded-xl" />
@@ -139,11 +196,12 @@ const Projects = () => {
             </motion.div>
 
             {/* 3rd project */}
-            <motion.div
+            {/* <motion.div
               initial={{ x: "-100%", opacity: 0 }}
               animate={{ x: 0, opacity: 1 }}
               transition={{ duration: 1, delay: 1 }}
-              className="card w-96   ... ring-2 ring-purple-950  shadow-4xl bg-gradient-to-r from-purple-900 to-pink-300 hover:text-white   hover:z-50 "
+              className="card w-72 mx-auto   ... ring-2 ring-purple-950  shadow-4xl  bg-gradient-to-r from-purple-900  to-pink-300 hover:text-white  hover:z-50
+              lg:w-96 lg:mx-0  md:w-96 md:mx-0 "
             >
               <figure className="px-10 pt-8">
                 <img src={chef} alt="" className="h-48 w-64 rounded-xl" />
@@ -192,7 +250,7 @@ const Projects = () => {
                   the true flavors of Bengal.{" "}
                 </p>
               </div>
-            </motion.div>
+            </motion.div> */}
           </div>
         </div>
       </motion.div>

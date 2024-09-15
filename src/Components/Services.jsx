@@ -83,7 +83,7 @@ const Services = () => {
           My Skills
         </h1>
       </div>
-      <div className="mx-16 p-10  grid grid-rows-1 gap-5 md:grid-rows-1 md:gap-5 md:py-9  lg:grid-cols-5 lg:gap-8  lg:py-4 lg:mx-40">
+      <div className="mx-16 p-10  grid grid-rows-1 gap-5 md:mx-44 md:grid-rows-1 md:gap-5 md:py-9  lg:grid-cols-5 lg:gap-8  lg:py-4 lg:mx-40">
         {skills.map((skill, index) => (
           <motion.div
             key={index}

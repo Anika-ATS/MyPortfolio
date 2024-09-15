@@ -32,7 +32,7 @@ const Resume = () => {
             </li>
 
             <li
-              className="text-md hover:scale-150 duration-300 ..."
+              className="text-md  hover:scale-150 duration-300 ..."
               onClick={() =>
                 setSkillData(true) &
                 setEducationData(false) &
