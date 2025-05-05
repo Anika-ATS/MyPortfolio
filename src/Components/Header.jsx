@@ -76,7 +76,7 @@ const Header = () => {
             offset={-70}
             duration={500}
           >
-            Project
+            Projects
           </Link>
         </li>
 

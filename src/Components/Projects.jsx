@@ -4,13 +4,14 @@ import { motion } from "framer-motion";
 import { BsLink45Deg } from "react-icons/bs";
 import { BsGithub } from "react-icons/bs";
 
-import Nyamapic from "../assets/imges/animal1.jpg";
+// import Nyamapic from "../assets/imges/animal1.jpg";
+import c from "../assets/imges/bgggg2.png";
 import pilates from "../assets/imges/P1.1.webp";
 import portfolio from "../assets/imges/portfoliopic.jpg";
 
 const Projects = () => {
   return (
-    <div id="projects ">
+    <div id="projects">
       <motion.div
         initial={{ opacity: 0 }}
         animate={{ opacity: 1, transition: { duration: 1 } }}
@@ -23,7 +24,7 @@ const Projects = () => {
         </div>
         {/* 1st section */}
         <div className="mx-auto ">
-          <div className=" mb-16 w-full grid grid-rows-1 gap-10 md:grid-rows-1 md:gap-5 md:mx-auto md:flex-row-1 lg:flex flex-col-3 lg:gap-7  ">
+          <div className=" mb-16 w-full grid grid-rows-1 gap-8 md:grid-rows-1 md:gap-5 md:mx-auto md:flex-row-1 lg:flex flex-col-3 lg:gap-7">
             {/* portfolio project */}
             <motion.div
               initial={{ x: "-100%", opacity: 0 }}
@@ -79,7 +80,7 @@ const Projects = () => {
               </div>
             </motion.div>
 
-            {/* 1st project */}
+            {/* pilatesct */}
             <motion.div
               initial={{ x: "-100%", opacity: 0 }}
               animate={{ x: 0, opacity: 1 }}
@@ -137,8 +138,66 @@ const Projects = () => {
               </div>
             </motion.div>
 
-            {/* 2nd project */}
+            {/* project cake*/}
             <motion.div
+              initial={{ x: "-100%", opacity: 0 }}
+              animate={{ x: 0, opacity: 1 }}
+              transition={{ duration: 1.5, delay: 1.5 }}
+              className="card w-72 mx-auto   ... ring-2 ring-purple-950  shadow-4xl  bg-gradient-to-r from-purple-900  to-pink-300 hover:text-white  hover:z-50
+              lg:w-96 lg:mx-3 md:w-96 md:mx-0  "
+            >
+              <figure className="px-10 pt-10">
+                <img src={c} alt="" className="rounded-xl" />
+              </figure>
+
+              {/* group-hover:bg-clip-text text-transparent bg-gradient-to-r from-pink-200 via-pink-400 to-pink-200 */}
+              <div className="card-body items-center text-center">
+                <div className="flex flex-col gap-3">
+                  <h2 className="card-title text-white text-md  text-justify font-serif    hover:text-ink-200 ">
+                    Falguni's Cake shop
+                  </h2>
+                  <div className="card-actions flex  flex-row gap-2">
+                    <div className="flex  gap-3">
+                      <a href="https://falguniscake.netlify.app/">
+                        <button className="mx-3 btn btn-xs bg-purple-950 hover-group:btn-outline btn-secondary transition-all duration-500 ">
+                          <BsLink45Deg className="text-white"></BsLink45Deg>
+                        </button>
+                      </a>
+                      {/* <p> Live Website</p> */}
+                    </div>
+
+                    <div className="flex  gap-1">
+                      <a href="https://github.com/Anika-ATS/FalguniResturant">
+                        <button className="mx-3 btn btn-xs  bg-purple-950 hover-group:btn-outline btn-secondary transition-all duration-500 ">
+                          <BsGithub className="text-white"></BsGithub>
+                        </button>
+                      </a>
+                      {/* <p> Client Side</p> */}
+                    </div>
+                    {/* <div className="flex  gap-2">
+                      <a href="https://github.com/Anika-ATS/NyamaHoard-server">
+                        <button className="btn btn-xs  bg-purple-950 hover-group:btn-outline btn-secondary transition-all duration-500 ">
+                          <BsGithub className="text-white"></BsGithub>
+                        </button>
+                      </a>
+                   
+                    </div> */}
+                  </div>
+                </div>
+                <p className="p-1 mx-2 text-white   text-sm text-justify font-serif  ">
+                  Falguni's Cake Bakery brings the warmth of homemade goodness
+                  to your celebrations. Each cake is freshly baked at home with
+                  care, love, and premium ingredients. From simple delights to
+                  customized creations, we make every order feel special.
+                  Perfect for birthdays, get-togethers, or just
+                  because—experience the cozy charm of homemade sweetness.
+                </p>
+              </div>
+            </motion.div>
+
+            {/* Nayama hoyard */}
+            {/* 2nd project */}
+            {/* <motion.div
               initial={{ x: "-100%", opacity: 0 }}
               animate={{ x: 0, opacity: 1 }}
               transition={{ duration: 1.5, delay: 1.5 }}
@@ -149,7 +208,6 @@ const Projects = () => {
                 <img src={Nyamapic} alt="" className="rounded-xl" />
               </figure>
 
-              {/* group-hover:bg-clip-text text-transparent bg-gradient-to-r from-pink-200 via-pink-400 to-pink-200 */}
               <div className="card-body items-center text-center">
                 <div className="flex flex-col gap-3">
                   <h2 className="card-title text-white text-md  text-justify font-serif    hover:text-ink-200 ">
@@ -162,7 +220,6 @@ const Projects = () => {
                           <BsLink45Deg className="text-white"></BsLink45Deg>
                         </button>
                       </a>
-                      {/* <p> Live Website</p> */}
                     </div>
 
                     <div className="flex  gap-1">
@@ -171,7 +228,6 @@ const Projects = () => {
                           <BsGithub className="text-white"></BsGithub>
                         </button>
                       </a>
-                      {/* <p> Client Side</p> */}
                     </div>
                     <div className="flex  gap-2">
                       <a href="https://github.com/Anika-ATS/NyamaHoard-server">
@@ -179,7 +235,6 @@ const Projects = () => {
                           <BsGithub className="text-white"></BsGithub>
                         </button>
                       </a>
-                      {/* <p> Server Side </p> */}
                     </div>
                   </div>
                 </div>
@@ -193,7 +248,7 @@ const Projects = () => {
                   easily.they can memorise them with fun.{" "}
                 </p>
               </div>
-            </motion.div>
+            </motion.div> */}
 
             {/* 3rd project */}
             {/* <motion.div

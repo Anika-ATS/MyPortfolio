@@ -36,7 +36,7 @@ const Home = () => {
               ></Typewriter>
             </h1>
             <p className="text-purple-950 text-xl font-bold lg:text-3xl md:text-2xl">
-              I'm Anika Tabassum,
+              This is Anika Tabassum
             </p>
             <span className="text-xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-pink-400 via-purple-400 to-purple-950">
               <Typewriter

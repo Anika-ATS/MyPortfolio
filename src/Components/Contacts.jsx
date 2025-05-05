@@ -172,7 +172,7 @@ const Contacts = () => {
         </div>
 
         {/* 2nd section*/}
-        <div className="w-full p-8 mr-24  mb-10 md:mx-40 md:mb-10 lg:mx-7 lg:mr-64 lg:p-3 ">
+        <div className="w-full p-8 mr-24  mb-10 md:mx-40 md:mb-10 lg:mx-7 lg:mr-64 lg:p-2">
           <div className="">
             <div className="card  w-full max-w-sm shadow-2xl bg-gradient-to-r from-purple-900  to-pink-300  mt-12 p-20 ">
               {/* <div className="card  mt-10 font-serif "> */}
