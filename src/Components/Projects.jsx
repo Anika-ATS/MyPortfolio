@@ -88,8 +88,8 @@ const Projects = () => {
               className="card w-72 mx-auto   ... ring-2 ring-purple-950  shadow-4xl  bg-gradient-to-r from-purple-900  to-pink-300 hover:text-white  hover:z-50
               lg:w-96 lg:mx-0 md:w-96 md:mx-0  "
             >
-              <figure className="px-10 pt-5">
-                <img src={pilates} alt="" className="rounded-xl" />
+              <figure className="px-10 pt-8">
+                <img src={pilates} alt="" className="rounded-xl h-48 w-64" />
               </figure>
 
               {/* bg-clip-text text-transparent bg-gradient-to-r from-pink-200 via-pink-400 to-pink-200 */}
@@ -146,7 +146,7 @@ const Projects = () => {
               className="card w-72 mx-auto   ... ring-2 ring-purple-950  shadow-4xl  bg-gradient-to-r from-purple-900  to-pink-300 hover:text-white  hover:z-50
               lg:w-96 lg:mx-3 md:w-96 md:mx-0  "
             >
-              <figure className="px-10 pt-10">
+              <figure className="px-10 pt-12">
                 <img src={c} alt="" className="rounded-xl" />
               </figure>
 
